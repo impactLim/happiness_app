@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCC"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:id="@+id/title"
+        android:text="@string/join_page_title"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="444dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/name_box"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/nickname_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="닉네임 (다섯글자 제한)"
+            android:inputType="textPersonName"
+            android:maxLength="5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/id_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="ID (email)"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/id_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="중복체크" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/pw_box"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/checkpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/pw_check"
+            android:inputType="textPassword" />
+
+        <Space
+            android:layout_width="313dp"
+            android:layout_height="51dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/join_button"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/join_button" />
+
+            <Button
+                android:id="@+id/join_cancel"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/join_cancel" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="가입하기"-->
+    <!--            android:layout_centerHorizontal="true"/>-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="뒤로가기" />-->
+
+
+</RelativeLayout>

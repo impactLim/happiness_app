@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5sp">
+
+        <ImageButton
+            android:id="@+id/x_icon2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/x_icon" />
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="수정완료"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/check_icon" />
+
+
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <!--        style="@android:style/ButtonBar"-->
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="5sp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="제목"
+                android:inputType="textPersonName"
+                android:paddingStart="5sp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"/>
+
+            <ImageButton
+                android:id="@+id/gallery_icon2"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/gallery_icon2" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edit_contents"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="5sp"
+            android:background="@drawable/btn_bg"
+            android:ems="10"
+            android:hint="오늘의 행복은 무엇이었나요?"
+            android:paddingStart="5sp"
+            android:paddingTop="5sp"
+            android:textSize="15sp"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            />
+
+
+    <ImageView
+        android:id="@+id/edit_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5sp"
+        android:layout_gravity="center"
+        />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="30dp"-->
+<!--android:layout_margin="5sp"-->
+<!--android:orientation="horizontal">-->
+
+<!--<ImageButton-->
+<!--    android:id="@+id/location_icon2"-->
+<!--    android:layout_width="25dp"-->
+<!--    android:layout_height="25dp"-->
+<!--    android:background="@android:color/transparent"-->
+<!--    android:scaleType="centerInside"-->
+<!--    android:layout_gravity="center"-->
+<!--    app:srcCompat="@drawable/location_icon" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/location_text2"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginStart="5sp"-->
+<!--    android:layout_marginTop="5sp"-->
+<!--    android:layout_marginEnd="5sp"-->
+<!--    android:gravity="center_vertical"-->
+<!--    android:hint="위치 (위치추가 가능하게)"-->
+<!--    android:paddingStart="5sp"-->
+<!--    android:textSize="15sp" />-->
+<!--</LinearLayout>-->

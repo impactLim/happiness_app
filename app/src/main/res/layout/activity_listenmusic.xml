@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5sp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/back_icon"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:text="행복 명상"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5sp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:gravity="center"
+            android:text="- 행복 글쓰기 전 명상타임 - "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <SeekBar android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/seekBar"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/textview_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00 : 00"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="명상시작"
+            android:id="@+id/buttonStart"
+            android:layout_weight="1"
+            />
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="일시정지"
+            android:id="@+id/buttonPause"
+            android:layout_weight="1"
+            />
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="재시작"
+            android:id="@+id/buttonRestart"
+            android:layout_weight="1"
+            />
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="명상종료"
+            android:id="@+id/buttonFinish"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5sp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:gravity="center"
+            android:text="- 명상 유튜브 추천 -"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="유튜브 가기"
+            android:onClick="onButtonClickedGoYoutube"
+            android:id="@+id/goYoutube"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5sp">
+
+        <TextView
+            android:id="@+id/listenmusic_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:text="# 행복활동을 하기 전에 명상을 해보세요! "
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/listenmusic_contents2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:text="# 하루를 정리하는데 도움될 거예요ㅎㅎ"
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="글쓰러 가기"
+            android:onClick="onButtonClickedGoYoutube"
+            android:id="@+id/writeafterlistenmusic"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

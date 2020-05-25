@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5sp">
+
+        <TextView
+            android:id="@+id/check_contents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:gravity="center"
+            android:text="행복 유튜브 추천 영상"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <view
+        android:id="@+id/youtubeView"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="행복 start"
+        />
+
+    <!--    <View-->
+    <!--        class="com.google.android.youtube.player.YouTubePlayer"-->
+    <!--        android:id="@+id/youtubeView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="188dp"-->
+    <!--        tools:layout_editor_absoluteX="5dp"-->
+    <!--        />-->
+
+    <!--    <VideoView-->
+    <!--        class="com.google.android.youtube.player.YouTubePlayer"-->
+    <!--        android:id="@+id/youtubeView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5sp">
+
+        <TextView
+            android:id="@+id/contents_ex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5sp"
+            android:gravity="center_vertical"
+            android:text="# 행복 start 버튼을 누르면 영상이 재생됩니다!"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/contents_ex2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5sp"
+            android:gravity="center_vertical"
+            android:text="# 화면이 작으시면 전체화면으로 이용하세요!"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/contents_ex3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5sp"
+            android:gravity="center_vertical"
+            android:text="# '행복합시다'가 아닌 '행복하기'를 선택합시다."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

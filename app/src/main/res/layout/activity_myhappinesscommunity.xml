@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5sp">
+
+        <ImageButton
+            android:id="@+id/back_icon"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/back_icon"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:gravity="center_vertical"
+            android:text="우리들의 행복커뮤니티"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/write_icon"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/write_icon" />
+
+        <ImageButton
+            android:id="@+id/search_icon"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/search_icon_01" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="5sp"
+        android:text="우리들의 행복이야기"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="5sp"
+        android:gravity="center_vertical"
+        android:text="내 글과 내가 구독한 사람들의 글"
+        android:textColor="#000000" />
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView14"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_marginStart="5sp"-->
+    <!--            android:layout_marginEnd="5sp"-->
+    <!--            android:gravity="center_vertical"-->
+    <!--            android:text="2019.10.28 (우측엔 점 세개 누르면 수정, 삭제 가능 옵션)" />-->
+    <!--    </LinearLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ourhappinesscommunity_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scrollbars="vertical" />
+
+
+</LinearLayout>

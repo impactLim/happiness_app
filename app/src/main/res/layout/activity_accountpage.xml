@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5sp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/back_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/back_icon"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:text="My page"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_weight="0.5"/>
+
+
+        <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+            android:layout_weight="1"
+        />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/mypage_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="닉네임"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/mypage_nickname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="닉네임"
+            android:textSize="20dp"
+            android:layout_marginLeft = "10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/myhappiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내가 생각하는 행복은?"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/myhappiness_contents"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="내가 생각하는 행복이란,"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_margin="5dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView21"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="등록한 행복"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="#000000"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/numbersOfWrite"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="0"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="#000000"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView23"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="공감한 행복"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="#000000"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/numbersOfLike"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="0"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="#000000"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_margin="5dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView26"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="행복 팔로워"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="#000000"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/myFollower"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="0"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="#000000"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView27"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="팔로잉 행복"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="#000000"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/FollowingSomeone"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="0"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="#000000"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+    <Button
+        android:id="@+id/golistenmusicpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="행복 명상하기"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:id="@+id/notice_happiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="행복글쓰기 알림 설정"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:id="@+id/gohappinesscommunity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="행복커뮤니티 입장"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/test_photo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="순간의 행복 저장소 (이미지 리사이클러 테스트용)"-->
+<!--        android:layout_margin="5dp"/>-->
+
+    <ImageButton
+        android:id="@+id/goSettingIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/setting_icon"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

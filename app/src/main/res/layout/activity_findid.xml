@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:id="@+id/findID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="아이디 찾기"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:background="@drawable/border"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/findIDtitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/confirm_name"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <EditText
+        android:id="@+id/findIDedit"
+        android:layout_width="223dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        />
+
+    <TextView
+        android:id="@+id/findIDtitie2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="아이디를 찾고자 하는 이메일을 입력하세요."
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <EditText
+        android:id="@+id/findIDedit2"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="textEmailAddress"
+        />
+
+    <Button
+        android:id="@+id/check_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_thispage"
+        android:textSize="20sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

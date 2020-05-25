@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/useridemail"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="@string/prompt_email"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userpassword"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="@string/prompt_password"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/useridemail" />
+
+    <Button
+        android:id="@+id/login_box"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/login_box"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userpassword"
+        app:layout_constraintVertical_bias="0.857" />
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/autoLOGIN"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="70dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="@string/auto_login"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/login_box"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/userpassword"-->
+<!--        app:layout_constraintVertical_bias="0.5" />-->
+
+    <CheckBox
+        android:id="@+id/saveID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="@string/save_id"
+        app:layout_constraintBottom_toTopOf="@+id/login_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userpassword"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5923393" />
+
+    <!--    <TextView-->
+<!--        android:id="@+id/textView20"-->
+<!--        android:layout_width="220dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="45dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="center"-->
+<!--        android:text="아이디를 잊으셨나요?"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/find_pw"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/guideline" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="220dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="45dp"-->
+<!--        android:layout_marginTop="65dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/forget_pw"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/find_pw"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/login_box" />-->
+
+    <!--    <Button-->
+<!--        android:id="@+id/find_ID"-->
+<!--        android:layout_width="115dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="아이디 찾기"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/guideline" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/find_pw"-->
+<!--        android:layout_width="115dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="@string/find_pw"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/guideline" />-->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/question_account"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/make_account"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/make_account"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:text="@string/make_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="PW : "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="140dp"
+        android:text="I D : "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

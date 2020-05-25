@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5sp">
+
+        <ImageButton
+            android:id="@+id/location_back_icon"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/back_icon"
+            android:contentDescription="TODO" />
+
+
+        <TextView
+            android:id="@+id/location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:hint="위치"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/location_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="location_address"
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/locationclickmap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        tools:context="com.example.abcd.googlemap.MapsActivity"
+        android:layout_margin="10dp"/>
+
+
+        <TextView
+            android:id="@+id/location_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="location_ex"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/seecontents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="게시글 확인하기"
+            android:textSize="15dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:scaleType="centerInside"
+            android:contentDescription="TODO" />
+
+
+</LinearLayout>

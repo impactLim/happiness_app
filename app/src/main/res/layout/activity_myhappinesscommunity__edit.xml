@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5sp">
+
+        <ImageButton
+            android:id="@+id/x_icon2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/x_icon" />
+
+        <Button
+            android:id="@+id/mycommunity_edit_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="수정완료"
+            android:textSize="20sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/check_icon" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/community_edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="5sp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="제목"
+        android:inputType="textPersonName"
+        android:paddingStart="5sp"
+        android:textSize="20sp"
+        android:background="@drawable/btn_bg"/>
+
+
+
+    <EditText
+        android:id="@+id/community_edit_contents"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="5sp"
+        android:background="@drawable/btn_bg"
+        android:ems="10"
+        android:hint="본문에 #을 이용해 행복태그를 입력해보세요!"
+        android:inputType="textPersonName"
+        android:paddingStart="5sp"
+        android:paddingTop="5sp"
+        android:textSize="15sp" />
+    <ImageView
+        android:id="@+id/community_edit_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5sp"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="5sp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        >
+        <!--        style="@android:style/ButtonBar"-->
+
+        <ImageButton
+            android:id="@+id/gallery_icon"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/gallery_icon2" />
+
+        <ImageButton
+            android:id="@+id/camera_icon"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/camera_icon" />
+
+        <ImageButton
+            android:id="@+id/video_icon"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/video_icon" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
