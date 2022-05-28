@@ -1,7 +1,6 @@
 # happiness_app
 
 '오늘의 행복' 서비소 소개 블로그 포스팅
-https://blog.naver.com/global_lim/221728471790
 
 [작품 이름]
 오늘의 행복
